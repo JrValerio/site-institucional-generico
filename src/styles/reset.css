@@ -1,8 +1,38 @@
-* {
-    border: 0;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);    
+body,
+header,
+nav,
+h1,
+h2,
+button,
+a,
+main,
+section,
+div,
+i,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;  
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+dialog{
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
 }
