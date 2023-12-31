@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./src/scripts/index.js"></script>
+    <script src="./src/scripts/index.js" defer></script>
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
@@ -14,7 +14,9 @@
     <header class="header">
       <div class="header__logo container__box">
         <img src="./src/assets/logo.svg" alt="logo" />
-        <button class="header__button">Entrar para próxima turma</button>
+        <button class="header__button" id="headerButton">
+          Entrar para próxima turma
+        </button>
       </div>
     </header>
     <main class="main">
@@ -59,7 +61,9 @@
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button class="faq__button">Entrar para próxima turma</button>
+              <button class="faq__button" id="faqButton">
+                Entrar para próxima turma
+              </button>
             </div>
           </div>
           <!-- RIGHT SIDE -->
@@ -200,6 +204,31 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog class="modal"></dialog>
+    <dialog class="modal container__box" id="modalContainer" open="false">
+      <div class="modal__content container__box">
+        <div class="modal__close">
+          <h2 class="modal__title">Cadastro</h2>
+          <button class="modal__close-button" id="closeModal">X</button>
+        </div>
+        <div class="modal__container">
+          <p class="modal__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digitar email"
+            class="modal__input"
+          />
+          <button class="modal__button">
+            Entrar na lista para próxima turma
+          </button>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>
