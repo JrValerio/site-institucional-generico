@@ -1,47 +1,49 @@
+/* ====== Importações Gerais ====== */
 @import url("./reset.css");
+@import url("./responsividade.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 
+/* ====== Variáveis de Cores e Fontes ====== */
 :root {
   --gray-1: #191c1f;
   --gray-2: #212529;
   --gray-3: #343a40;
-
   --gray-4: #adb5bd;
   --gray-5: #ced4da;
   --gray-6: #edf2ff;
   --gray-7: #f8f9fa;
-
   --brand-1: #4c6ef5;
   --brand-2: #364fc7;
-
   --font-family: "Inter", sans-serif;
   --font-w-400: 400;
   --font-w-600: 600;  
 }
 
+/* ====== Estilo Global do Body ====== */
 body {
- 
   font-family: var(--font-family);
   background-color: var(--gray-2);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* ====== Estilo Global dos Headers (h1 - h6) ====== */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
   font-weight: var(--font-w-600);
   color: var(--gray-6);
 }
 
+.container {
+  max-width: 1756px; 
+  margin: auto;
+  padding: clamp(0.5rem, 0.147rem + 1.333vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====== Estilos de Container ====== */
 .container__box {
   max-width: 1256px;
   margin: 0 auto;
 }
-
-
-
-
